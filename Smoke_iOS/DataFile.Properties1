@@ -1,0 +1,10 @@
+#override the session xml file
+#Fri Apr 15 19:40:40 IST 2016
+platformName=Android
+xmlFilePath=/Users/monocept/Documents/workspace_luna/com.TWC.Automation.WithCharles/CapturedSessionFile/charles201604151940.xml
+downloadPath=/Users/monocept/Documents/workspace_luna/com.TWC.Automation.WithCharles/CapturedSessionFile/
+deviceName=Samsung S6
+appPath=/Users/monocept/Documents/workspace_luna/com.TWC.Automation.WithCharles/APKFile/TWC_670001256_googleRelease.apk
+platformVersion=6.6.0
+dataFilePath=/Users/monocept/Documents/workspace_luna/com.TWC.Automation.WithCharles/DataFile.Properties
+adbPath=/Users/monocept/Documents/adt-bundle-mac-x86_64-20130522/sdk/platform-tools/adb
