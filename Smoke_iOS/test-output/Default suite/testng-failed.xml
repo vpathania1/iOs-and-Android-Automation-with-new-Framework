@@ -3,12 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Run_performance.Run_iOS_Performance">
+      <class name="com.Functions.Smoke_Run">
         <methods>
+          <include name="pullto_refresh"/>
+          <include name="WFXTriggers_cxtg"/>
+          <include name="extenedNewPage_ads"/>
+          <include name="setto_TestMode"/>
+          <include name="extenedDailyPage_ads"/>
           <include name="beforeTest"/>
-          <include name="Performance"/>
+          <include name="cleanlaunch"/>
+          <include name="extenedHourlyPage_ads"/>
+          <include name="ad_crwd"/>
+          <include name="extenedMapPage_ads"/>
+          <include name="WFXTriggers_Factuals"/>
         </methods>
-      </class> <!-- com.Run_performance.Run_iOS_Performance -->
+      </class> <!-- com.Functions.Smoke_Run -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

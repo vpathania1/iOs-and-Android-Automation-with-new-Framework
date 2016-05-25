@@ -29,15 +29,20 @@ public class Main {
 //		Functions.charles_Stop();
 //		Functions.downloadXMLFile();
 		Functions.readXML();
-//      Functions.verifyPubadCal(1,"cxtg");
+      
 		//Functions.verifyTwoParamsFromPubadCal("zip", "cxtg");
 		//WFX TRIGGER
-//		Functions.verifyAPICal(2,"cxtg");
-//		Functions.readWFXTriggers("cxtg") ;
+		Functions.verifyPubadCal(2,"cxtg");
+		Functions.verifyAPICal(2,"cxtg");
+		Functions.readwfxTriggers("cxtg") ;
 		//FACTUAL
 		Functions.verifyPubadCal(1,"location");
 		Functions.verifyAPICal(1,"location");
 		Functions.readlocation_wfxTriggers("location") ;
+		//Read ad.crwd call
+		Functions.verifyPubadCal(1,"ad");
+		Functions.verifyAPICal(1,"ad");
+		Functions.readlocation_wfxTriggers("ad") ;
 		
 	}
 }
