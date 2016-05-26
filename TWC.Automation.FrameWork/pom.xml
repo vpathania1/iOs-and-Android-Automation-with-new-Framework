@@ -2,14 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.TWC.Automation.FrameWork</groupId>
-  <artifactId>TWC.Automation.FrameWork</artifactId>
+  <groupId>TWC.Automation.FrameWork</groupId>
+  <artifactId>TWC.Automation.FrameWork</artifactId> 
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-
   <name>TWC.Automation.FrameWork</name>
   <url>http://maven.apache.org</url>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -64,6 +62,54 @@
     <artifactId>poi</artifactId>
     <version>3.9</version>
 	</dependency>
+	
+	<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>3.2.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.seleniumhq.selenium</groupId>
+					<artifactId>selenium-java</artifactId>
+				</exclusion>
+			</exclusions>
+
+		</dependency>
 
   </dependencies>
+  <build>
+		<pluginManagement>
+
+
+			<plugins>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+
+					<configuration>
+						<version>3.3</version>
+
+					</configuration>
+				</plugin>
+
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.6</version>
+					<configuration>
+
+						<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<!--  	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
+						</suiteXmlFiles>
+
+						<testFailureIgnore>true</testFailureIgnore>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>
